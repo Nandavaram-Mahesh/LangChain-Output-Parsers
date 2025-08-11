@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 
+# Response Without Output Parser
 
 load_dotenv()
 
@@ -39,6 +40,7 @@ prompt2 = template2.invoke({'text':result.content})
 
 result1 = model.invoke(prompt2)
 
+# we are manually extracting the summary from the response
 print(result1.content)
 
 # <think>

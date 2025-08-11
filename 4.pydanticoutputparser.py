@@ -36,4 +36,5 @@ chain = template | model | parser
 final_result = chain.invoke({'place':'sri lankan'})
 
 print(final_result)
+
 # name='Lakshika Perera' age=25 city='Colombo'
